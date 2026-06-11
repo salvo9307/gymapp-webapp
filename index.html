@@ -103,6 +103,16 @@
       gap: 10px;
       flex-wrap: wrap;
     }
+	
+	.recovery-badge{
+    display:inline-block;
+    padding:4px 10px;
+    border-radius:999px;
+    background:rgba(56,189,248,.15);
+    color:#8fdfff;
+    font-size:13px;
+    font-weight:600;
+	}
 
     button {
       border: 0;
@@ -383,16 +393,22 @@
         font-weight: 600;
       }
 
-      .row-box td:nth-child(4)::before {
-        content: "Peso";
-        display: block;
-        margin-bottom: 6px;
-        font-size: 12px;
-        color: #90a3c3;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        font-weight: 700;
-      }
+	.row-box td:nth-child(4)::before {
+		content: "Recupero: ";
+		color: #90a3c3;
+		font-weight: 600;
+	}
+
+	.row-box td:nth-child(5)::before {
+		content: "Peso";
+		display: block;
+		margin-bottom: 6px;
+		font-size: 12px;
+		color: #90a3c3;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-weight: 700;
+	}
 
       input[type="number"] {
         font-size: 16px;
@@ -442,15 +458,15 @@
 			</tr>
             </thead>
             <tbody>
-              <tr class="row-box"><td>1</td><td>Chest Press</td><td>3 x 10</td><td>60 sec</td><td><input type="number" data-key="g1e1" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>2</td><td>Distensioni Panca inclinata manubri</td><td>3 x 8</td><td>120 sec</td><td><input type="number" data-key="g1e2" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>3</td><td>Croci su panca piana</td><td>3 x 12</td><td>60 sec</td><td><input type="number" data-key="g1e3" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>4</td><td>Curl machine</td><td>3 x 10</td><td>90 sec</td><td><input type="number" data-key="g1e4" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>5</td><td>Curl Martello</td><td>3 x 12</td><td>60 sec</td><td><input type="number" data-key="g1e5" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>6</td><td>Avambracci</td><td>3 x 10</td><td>60 sec</td><td><input type="number" data-key="g1e6" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>7</td><td>French Press</td><td>3 x 10</td><td>90 sec</td><td><input type="number" data-key="g1e7" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>8</td><td>Estensioni al Cavo</td><td>3 x 12</td><td>60 sec</td><td><input type="number" data-key="g1e8" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>9</td><td>Addome</td><td>3 x 15</td><td>120 sec</td><td><input type="number" data-key="g1e9" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>1</td><td>Chest Press</td><td>3 x 10</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g1e1" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>2</td><td>Distensioni Panca inclinata manubri</td><td>3 x 8</td><td><span class="recovery-badge">120 sec</span></td><td><input type="number" data-key="g1e2" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>3</td><td>Croci su panca piana</td><td>3 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g1e3" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>4</td><td>Curl machine</td><td>3 x 10</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g1e4" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>5</td><td>Curl Martello</td><td>3 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g1e5" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>6</td><td>Avambracci</td><td>3 x 10</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g1e6" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>7</td><td>French Press</td><td>3 x 10</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g1e7" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>8</td><td>Estensioni al Cavo</td><td>3 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g1e8" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>9</td><td>Addome</td><td>3 x 15</td><td><span class="recovery-badge">120 sec</span></td><td><input type="number" data-key="g1e9" placeholder="kg" /></td></tr>
             </tbody>
           </table>
         </div>
@@ -473,16 +489,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="row-box"><td>1</td><td>Trazioni alla Pull Down</td><td>3 x 10</td><td>60 sec</td><td><input type="number" data-key="g2e1" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>2</td><td>Pulley basso</td><td>3 x 8</td><td>90 sec</td><td><input type="number" data-key="g2e2" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>3</td><td>Rematore machine</td><td>3 x 12</td><td>60 sec</td><td><input type="number" data-key="g2e3" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>4</td><td>Pull Down Cavo</td><td>2 x 12</td><td>60 sec</td><td><input type="number" data-key="g2e4" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>5</td><td>Trapezi</td><td>2 x 12</td><td>60 sec</td><td><input type="number" data-key="g2e5" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>6</td><td>Lento Seduto</td><td>2 x 8</td><td>90 sec</td><td><input type="number" data-key="g2e6" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>7</td><td>Alzate laterali</td><td>3 x 10</td><td>60 sec</td><td><input type="number" data-key="g2e7" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>8</td><td>Alzate laterali macchina</td><td>2 x 12</td><td>60 sec</td><td><input type="number" data-key="g2e8" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>9</td><td>Croci inverse</td><td>2 x 12</td><td>60 sec</td><td><input type="number" data-key="g2e9" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>10</td><td>Addome</td><td>3 x 15</td><td>60 sec</td><td><input type="number" data-key="g2e10" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>1</td><td>Trazioni alla Pull Down</td><td>3 x 10</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e1" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>2</td><td>Pulley basso</td><td>3 x 8</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g2e2" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>3</td><td>Rematore machine</td><td>3 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e3" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>4</td><td>Pull Down Cavo</td><td>2 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e4" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>5</td><td>Trapezi</td><td>2 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e5" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>6</td><td>Lento Seduto</td><td>2 x 8</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g2e6" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>7</td><td>Alzate laterali</td><td>3 x 10</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e7" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>8</td><td>Alzate laterali macchina</td><td>2 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e8" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>9</td><td>Croci inverse</td><td>2 x 12</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e9" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>10</td><td>Addome</td><td>3 x 15</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g2e10" placeholder="kg" /></td></tr>
             </tbody>
           </table>
         </div>
@@ -500,18 +516,19 @@
                 <th>#</th>
                 <th>Esercizio</th>
                 <th>Serie x Rep</th>
+    <th>Recupero</th>
                 <th>Peso</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="row-box"><td>1</td><td>Panca Piana Bilanciere</td><td>4 x 8</td><td>90 sec</td><td><input type="number" data-key="g3e1" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>2</td><td>Croci ai cavi</td><td>3 x 10</td><td>90 sec</td><td><input type="number" data-key="g3e2" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>3</td><td>Coci alla macchina</td><td>3 x 10</td><td>90 sec</td><td><input type="number" data-key="g3e3" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>4</td><td>Curl su panca </td><td>3 x 10</td><td>90 sec</td><td><input type="number" data-key="g3e4" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>5</td><td>Curl al cavo</td><td>3 x 10</td><td>60 sec</td><td><input type="number" data-key="g3e5" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>6</td><td>Estensioni su panca</td><td>3 x 12</td><td>90 sec</td><td><input type="number" data-key="g3e6" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>7</td><td>Estensioni con corda</td><td>3 x 12</td><td>90 sec</td><td><input type="number" data-key="g3e7" placeholder="kg" /></td></tr>
-              <tr class="row-box"><td>8</td><td>Addome</td><td>3 x 15</td><td>60 sec</td><td><input type="number" data-key="g3e8" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>1</td><td>Panca Piana Bilanciere</td><td>4 x 8</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g3e1" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>2</td><td>Croci ai cavi</td><td>3 x 10</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g3e2" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>3</td><td>Coci alla macchina</td><td>3 x 10</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g3e3" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>4</td><td>Curl su panca </td><td>3 x 10</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g3e4" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>5</td><td>Curl al cavo</td><td>3 x 10</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g3e5" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>6</td><td>Estensioni su panca</td><td>3 x 12</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g3e6" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>7</td><td>Estensioni con corda</td><td>3 x 12</td><td><span class="recovery-badge">90 sec</span></td><td><input type="number" data-key="g3e7" placeholder="kg" /></td></tr>
+              <tr class="row-box"><td>8</td><td>Addome</td><td>3 x 15</td><td><span class="recovery-badge">60 sec</span></td><td><input type="number" data-key="g3e8" placeholder="kg" /></td></tr>
             </tbody>
           </table>
         </div>
